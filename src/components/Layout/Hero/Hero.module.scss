@@ -1,0 +1,26 @@
+.heroContainer {
+    margin-top: 200px;
+    color: white;
+    position: relative;
+    text-align: center;
+
+    .heroText {
+        font-size: 50px;
+        
+        .name {
+            color: #EF3724;
+        }
+    }
+    .jobNameBtn {
+        background-color: rgba(239,56,36,0.15);
+        height: 50px;
+        border-radius: 50px;
+        border: 0;
+        color: #EF3724;
+        font-weight: bolder;
+        font-size: 20px;
+        text-shadow: 0 2px 4px rgb(23 25 37 / 40%);
+        padding: 0 20px 0 20px;
+    }
+
+}

@@ -1,0 +1,35 @@
+@use '../../../../globalCss/variables' as bp;
+
+.photoSquare {
+    width: 280px;
+    height: 500px;
+    border: 5px solid #EF3724;
+
+    @include bp.lgDesktop {
+        width: 230px;
+        height: 400px;
+    }
+
+    @include bp.desktop {
+        width: 180px;
+        height: 330px;
+    }
+
+    .profilePhoto {
+        width: 280px;
+        height: 500px;
+        margin-left: -14%;
+        margin-top: 14%;
+
+        @include bp.lgDesktop {
+            width: 230px;
+            height: 430px;
+        }
+
+        @include bp.desktop {
+            width: 180px;
+            height: 330px;
+        }
+        
+    }
+}

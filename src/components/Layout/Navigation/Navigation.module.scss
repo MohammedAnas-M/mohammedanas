@@ -1,0 +1,93 @@
+.navContainer {
+    background-color: rgba(104,102,102,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    color: white;
+    z-index: 2;
+
+    .navigation {
+        display: flex;
+        gap: 3em;
+        justify-content: center;
+        list-style-type: none;
+        font-weight: 500;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+          }
+
+    }
+    
+    .brand {
+        align-items: center;
+        display: flex;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .toggler {
+        color: rgb(167, 0, 0);
+        width: 50px;
+        height: 50px;
+        border: 2px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: rgb(154, 154, 154);
+
+        @media screen and (min-width: 769px) {
+            display: none;
+          }
+
+        .togglerLine {
+            width: 80%;
+            border: 1px solid;
+            height: 7px;
+            background-color: rgb(167, 0, 0);
+            border-radius: 50px;
+        }
+    }
+}
+
+.togglerMenu {
+    width: 100%;
+    height: 380px;
+    color:white;
+    position: absolute;
+    margin-top: 70px;
+    background-color: rgba(104,102,102,0.8);
+    z-index: 1;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    transition: visibility 1s, opacity 0.5s linear;
+    opacity: 1;
+
+    @media screen and (min-width: 769px) {
+        display: none;
+      }
+    
+    .togglerMenuList {
+        list-style-type: none;
+        cursor: pointer;
+        li {
+            margin-top: 35px;
+            margin-left: -40px;
+        }
+    }
+
+    &.togglerHide {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+

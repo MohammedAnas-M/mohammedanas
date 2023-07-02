@@ -1,0 +1,9 @@
+export const NAV_ITEMS = ["HOME","ABOUT","PORTFOLIO","BLOG","CONTACT"];
+export const BRAND = "portfolio";
+export const PROFILE_NAME = "Mohammed Anas M";
+export const JOB_NAME = "Front-End Developer";
+export const INTRO_PARA = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form but the majority have suffered alteration in some";
+export const FROM_PLACE = "Kerala";
+export const LIVING_PLACE = "Bengaluru";
+export const AGE = 28;
+export const GENDER = "Male";

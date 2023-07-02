@@ -1,0 +1,72 @@
+@use '../../../../globalCss/variables' as bp;
+
+.intro {
+    max-width: 600px;
+    text-align: justify;
+    margin-top: 30px;
+
+    @include bp.tablet {
+        max-width: 400px;
+
+    }
+
+    @include bp.lgDesktop {
+        max-width: 430px;
+    }
+
+    .name {
+        font-size: 40px;
+
+        @include bp.tablet {
+            font-size: 35px;
+        }
+    }
+    .job_desc {
+        font-size: 25px;
+        color: #EF3724;
+        font-weight: 600;
+
+        @include bp.tablet {
+            font-size: 20px;
+        }
+    }
+    .introPara {
+        margin: 20px 0 0 0;
+        color: gray;
+        line-height: 25px;
+    }
+    .list {
+        margin: 20px 0 0 0;
+        list-style-type:none;
+        font-size: 20px;
+        @include bp.tablet {
+            font-size: 15px;
+        }
+    }
+    .list li::before {
+        content: "\2022";
+        color:#EF3724;
+        width: 1em;
+        margin-right: 10px;
+        margin-left: -40px;
+    }
+    .downloadCv {
+        margin: 25px 0 0 0;
+        border: 2px solid #EF3724;
+        background-color: white;
+        font-size: 20px;
+        color: #EF3724;
+        border-radius: 8px;
+        padding: 14px 16px;
+        font-weight: bold;
+
+        @include bp.tablet {
+            font-size: 15px;
+        }
+    }
+    .downloadCv:hover {
+        background-color: #EF3724;
+        color: white;
+        cursor: pointer;
+    }
+}

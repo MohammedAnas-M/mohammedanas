@@ -1,0 +1,50 @@
+.skillDetailsContainer {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px 0 50px 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  
+  max-width: 1280px;
+  
+
+  .skill {
+    font-size: 20px;
+    font-weight: 600;
+    flex-basis: 40%;
+    padding: 20px 0 20px 126px;
+    
+    .progressBarWrapper {
+      background-color: white;
+      border: 3px solid white;
+      border-radius: 30px;
+      box-shadow: 0 0 0 2px #ef3724;
+      margin-top: 10px;
+      width: 75%;
+
+      .progressBar {
+        text-align: center;
+        background-color: #ef3724;
+        border-radius: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+
+        &.percent100 {
+          width: 100%;
+        }
+        &.percent85 {
+          width: 85%;
+        }
+        &.percent90 {
+            width: 90%;
+          }
+        &.percent70 {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
