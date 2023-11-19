@@ -9,7 +9,7 @@ $desktopLg-width: 1140px;
 }
 
 @mixin desktop {
-  @media (max-width: #{$desktop-width}) {
+  @media (min-width: #{$desktop-width}) {
     @content;
   }
 }

@@ -26,6 +26,9 @@
 
     .skill__text {
       text-align: center;
+      @include bp.desktop {
+        text-align: unset;
+      }
     }
     
     .progressBarWrapper {
