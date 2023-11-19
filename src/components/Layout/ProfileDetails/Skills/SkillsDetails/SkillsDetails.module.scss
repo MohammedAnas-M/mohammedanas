@@ -1,3 +1,5 @@
+@use '../../../../../globalCss/variables' as bp;
+
 .skillDetailsContainer {
   display: flex;
   margin: 0 auto;
@@ -6,15 +8,25 @@
   padding: 50px 0 50px 0;
   flex-grow: 0;
   flex-shrink: 0;
-  
   max-width: 1280px;
-  
 
   .skill {
     font-size: 20px;
     font-weight: 600;
     flex-basis: 40%;
     padding: 20px 0 20px 126px;
+
+    @include bp.tablet {
+      flex-basis: 100%;
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .skill__text {
+      text-align: center;
+    }
     
     .progressBarWrapper {
       background-color: white;

@@ -1,7 +1,14 @@
+@use '../../../../../globalCss/variables' as bp;
+
 .academics__container {
   margin: 50px 200px 0 200px;
   display: flex;
   gap: 4rem;
+
+  @include bp.tablet {
+    flex-direction: column;
+    margin: 0 0 0 10px;
+  }
 
   .academics__timeline {
     list-style: none;

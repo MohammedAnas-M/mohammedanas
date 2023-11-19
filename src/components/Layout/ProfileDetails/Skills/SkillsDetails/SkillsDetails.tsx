@@ -53,7 +53,7 @@ const SkillsDetails = (props: {}) => {
       {skills.map((skill) => {
         return (
           <div className={classes["skill"]} key={skill.name}>
-            {skill.name}
+            <p className={classes["skill__text"]}>{skill.name}</p>
             <div className={classes["progressBarWrapper"]}>
               <div
                 className={`${classes["progressBar"]} ${
