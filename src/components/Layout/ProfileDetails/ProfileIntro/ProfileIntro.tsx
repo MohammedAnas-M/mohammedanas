@@ -2,6 +2,11 @@ import classes from './ProfileIntro.module.scss';
 import {PROFILE_NAME, JOB_NAME, INTRO_PARA, FROM_PLACE, LIVING_PLACE, AGE, GENDER} from '../../../../Utils/Constants/Constants'
 
 const ProfileIntro = (props:{}) => {
+    const handleDownload = () => {
+        const resumePath = `${process.env.PUBLIC_URL}/Resume.pdf`;
+        window.open(resumePath, '_blank');
+    }
+
     return (
         <div className={classes['intro']}>
                 <div className={classes['name']}>{PROFILE_NAME}</div>
@@ -13,7 +18,7 @@ const ProfileIntro = (props:{}) => {
                     <li><strong>Age: </strong>{AGE}</li>   
                     <li><strong>Gender: </strong>{GENDER}</li>   
                 </ul>
-                <button className={classes['downloadCv']}>Download CV</button>
+                <button onClick={handleDownload} className={classes['downloadCv']}>Download CV</button>
             </div>
     )
 };
