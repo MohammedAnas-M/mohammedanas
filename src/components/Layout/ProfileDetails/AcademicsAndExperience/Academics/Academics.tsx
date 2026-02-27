@@ -37,18 +37,45 @@ const Academics = () => {
       <div className={classes["academic__column"]}>
         <h1 className={classes["academic__title"]}>Experience</h1>
         <ul className={classes["academics__timeline"]}>
-          <li className={classes["academics__course"]}>
+        <li className={classes["academics__course"]}>
             <div
               className={`${classes["academics__title"]} ${classes["academics__title--red"]}`}
             >
-              2021 to Current
+              2024 to Present
+            </div>
+            <div className={classes["academics__details"]}>
+              <h5 className={classes["academics__details__title"]}>
+                GlobalLogic, A Hitachi Group Company
+              </h5>
+              <p className={classes["academics__details__subtitle"]}>
+                Lead
+              </p>
+              Lead Frontend Engineer for a large-scale Google Workspace platform, driving UI development,
+migration efforts, and performance optimization initiatives.
+• Developed reusable Web Components using Lit, Shadow DOM, Preact, TypeScript, enabling
+scalable micro-frontend architecture.
+• Designed and maintained a centralized component library using Storybook, improving UI
+consistency and cross-team adoption.
+• Implemented SSR and SSG strategies to optimize large volumes of static pages, improving load
+times and SEO performance.
+• Integrated Gemini LLM-based workflows and CMS systems to enhance content automation and
+operational efficiency.
+• Mentored junior developers, conducted code reviews, and enforced frontend best practices to
+maintain high code quality standards.
+            </div>
+          </li>
+          <li className={classes["academics__course"]}>
+            <div
+              className={`${classes["academics__title"]} ${classes["academics__title"]}`}
+            >
+              2021 to 2024
             </div>
             <div className={classes["academics__details"]}>
               <h5 className={classes["academics__details__title"]}>
                 Capgemini
               </h5>
               <p className={classes["academics__details__subtitle"]}>
-                Consultant
+                Senior Consultant
               </p>
               During my tenure at Capgemini as a Front-End Developer, I've undertaken diverse responsibilities that encompass the complete spectrum of web development. My role has been instrumental in driving the implementation of new features, orchestrating the seamless migration of web applications from JQuery to ReactJS, and consistently enhancing their functionality.
 

@@ -8,7 +8,7 @@ const Hero = (props:{}) => {
                 I'm <strong className={classes['name']}>Mohammed Anas</strong> M
             </span>
             <br />   
-            <button className={classes['jobNameBtn']}>Front-End Developer</button>
+            <button className={classes['jobNameBtn']}>Senior Front-End Developer</button>
         </div>
     )
 }

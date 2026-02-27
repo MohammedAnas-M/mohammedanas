@@ -46,6 +46,18 @@ const SkillsDetails = (props: {}) => {
       name: "React Query",
       progress: "percent85",
     },
+    {
+      name: "Preact",
+      progress: "percent60",
+    },
+    {
+      name: "Web Components",
+      progress: "percent80",
+    },
+    {
+      name: "LitJS",
+      progress: "percent80",
+    },
   ];
 
   return (
