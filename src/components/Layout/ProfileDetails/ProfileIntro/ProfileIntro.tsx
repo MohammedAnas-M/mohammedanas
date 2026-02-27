@@ -31,7 +31,7 @@ const ProfileIntro = (props: {}) => {
       }, 5000);
     });
   }, []);
-  
+
   return (
     <section id="profile__intro" className={classes["intro"]}>
       <div id="profile__intro-resume" style={{ visibility: "hidden" }} />
@@ -57,7 +57,7 @@ const ProfileIntro = (props: {}) => {
         </li>
       </ul>
       <button id="resume" onClick={handleDownload} className={buttonClassnames}>
-        Download CV
+        Download Resume
       </button>
     </section>
   );

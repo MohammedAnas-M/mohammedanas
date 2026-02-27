@@ -8,7 +8,7 @@ export const NAV_ITEMS = [
         href:'skills',
     },
     {
-        label:"ACADEMICS",
+        label:"ACADEMICS & EXPERIENCES",
         href:'academics',
     },
     {
