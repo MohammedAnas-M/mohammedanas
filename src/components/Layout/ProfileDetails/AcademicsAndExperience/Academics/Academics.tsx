@@ -10,7 +10,7 @@ const Academics = () => {
             <div
               className={`${classes["academics__title"]} ${classes["academics__title--red"]}`}
             >
-              2019
+              2020
             </div>
             <div className={classes["academics__details"]}>
               <h5 className={classes["academics__details__title"]}>
