@@ -63,6 +63,25 @@
         @include bp.tablet {
             font-size: 15px;
         }
+
+        &.highlight {
+            animation: blinkBorder 0.8s infinite;
+        }
+
+        @keyframes blinkBorder {
+            0% {
+              border-color: red;
+              box-shadow: 0 0 5px red;
+            }
+            50% {
+              border-color: limegreen;
+              box-shadow: 0 0 12px limegreen;
+            }
+            100% {
+              border-color: red;
+              box-shadow: 0 0 5px red;
+            }
+          }
     }
     .downloadCv:hover {
         background-color: #EF3724;

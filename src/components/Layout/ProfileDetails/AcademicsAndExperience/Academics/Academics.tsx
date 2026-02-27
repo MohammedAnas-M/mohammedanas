@@ -2,7 +2,7 @@ import classes from "./Academics.module.scss";
 
 const Academics = () => {
   return (
-    <div className={classes["academics__container"]}>
+    <section id="academics" className={classes["academics__container"]}>
       <div className={classes["academic__column"]}>
         <h1 className={classes["academic__title"]}>Education</h1>
         <ul className={classes["academics__timeline"]}>
@@ -98,7 +98,7 @@ This journey at Capgemini has not only honed my technical proficiency but has al
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

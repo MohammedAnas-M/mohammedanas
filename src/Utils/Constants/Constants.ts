@@ -1,4 +1,22 @@
-export const NAV_ITEMS = ["HOME","ABOUT","PORTFOLIO","BLOG","CONTACT"];
+export const NAV_ITEMS = [
+    {
+        label:"ABOUT",
+        href:'profile__intro',
+    },
+    {
+        label:"SKILLS",
+        href:'skills',
+    },
+    {
+        label:"ACADEMICS",
+        href:'academics',
+    },
+    {
+        label:"RESUME",
+        href:'profile__intro-resume',
+    },
+]
+//export const NAV_ITEMS = ["ABOUT","SKILLS","ACADEMICS","GET MY RESUME"];
 export const BRAND = "portfolio";
 export const PROFILE_NAME = "Mohammed Anas M";
 export const JOB_NAME = "Senior Front-End Developer";

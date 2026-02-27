@@ -2,7 +2,7 @@ import classes from './SkillsHeading.module.scss';
 
 const SkillsHeading = (props:{}) => {
     return(
-        <div className={classes['skillsHeading']}>My Skills</div>
+        <section id="skills" className={classes['skillsHeading']}>My Skills</section>
     )
 };
 

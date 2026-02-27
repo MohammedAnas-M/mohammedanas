@@ -19,7 +19,7 @@ const togglerMenuHandler = () => {
             <span className={classes['brand']}>{BRAND.toUpperCase()}</span>
             <nav>
               <ul className={classes['navigation']}>
-                  {NAV_ITEMS.map(item => <NavigationItem key={item} name={item} />)}
+                  {NAV_ITEMS.map(item => <NavigationItem key={item.label} href={`#${item.href}`} name={item.label} />)}
               </ul>
             </nav>
             <span onClick={togglerMenuHandler} className={classes['toggler']}>
@@ -30,7 +30,7 @@ const togglerMenuHandler = () => {
         </div>
         <div className={`${classes['togglerMenu']} ${classes['togglerHide']}`} ref={togglerMenu}>
           <ul className={classes['togglerMenuList']}>
-            {NAV_ITEMS.map(item => <li key={item}>{item}</li>)}
+          {NAV_ITEMS.map(item => <NavigationItem onClickHandler={togglerMenuHandler} key={item.label} href={`#${item.href}`} name={item.label} />)}
           </ul>
         </div>
       </>
